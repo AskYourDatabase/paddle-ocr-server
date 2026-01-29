@@ -6,8 +6,12 @@ echo "=========================================="
 echo "  PaddleOCR Server Setup"
 echo "=========================================="
 
-# Install dependencies
-echo "Installing Python packages..."
+# Install paddlepaddle-gpu from official source (PyPI doesn't have 3.x)
+echo "Installing PaddlePaddle GPU from official source..."
+pip install paddlepaddle-gpu==3.2.2 -i https://www.paddlepaddle.org.cn/packages/stable/cu118/
+
+# Install other dependencies
+echo "Installing other packages..."
 pip install --no-cache-dir -r requirements.txt
 
 echo "=========================================="
