@@ -6,3 +6,4 @@ paddlex==3.3.12
 fastapi
 uvicorn
 python-multipart
+modelscope
