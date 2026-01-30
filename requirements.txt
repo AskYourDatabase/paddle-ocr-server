@@ -1,9 +1,8 @@
 # PaddleOCR Server Dependencies
-# paddlepaddle-gpu installed separately from official source
+# Using 2.7.x which doesn't require paddlex/modelscope
 
-paddleocr==3.3.2
-paddlex==3.3.12
+paddlepaddle-gpu
+paddleocr==2.7.3
 fastapi
 uvicorn
 python-multipart
-modelscope
